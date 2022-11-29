@@ -1,0 +1,21 @@
+#wrapper {
+    display: grid;
+    width: 95vw;
+    min-height: 150vh;
+    border: solid 1px black;
+    margin: auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+    's1 s1 s1'
+    'ft ft ft';
+}
+
+#sec1 {
+    grid-area: s1;
+    border: solid 1px black;
+}
+
+footer {
+    grid-area: ft;
+    border: solid 1px black;
+}
