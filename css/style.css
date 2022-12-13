@@ -1,21 +1,90 @@
 #wrapper {
     display: grid;
     width: 95vw;
-    min-height: 150vh;
+    min-height: 100vh;
     border: solid 1px black;
     margin: auto;
+    background-color: rgb(148, 200, 197);
     grid-gap: 10px;
     grid-template-areas: 
     's1 s1 s1'
+    's2 s2 s2'
+    's3 s3 s3'
+    's4 s5 s6'
     'ft ft ft';
 }
 
+#as {
+    display: flex;
+    flex-wrap: wrap;
+}
 #sec1 {
     grid-area: s1;
     border: solid 1px black;
+    height: 300px;
+    width: 1420px;
+    background-size: contain;
+    background-image: url(../webb-banner.pdf);
+}
+
+#sec2 {
+    grid-area: s2;
+    width: 1420px;
+    border: solid 1px black;
+}
+
+#sec3 {
+    grid-area: s3;
+    width: 1420px;
+    display: grid;
+    padding: 15px;
+    grid-template-areas: 
+    'a1 a2 a3';
 }
 
 footer {
     grid-area: ft;
     border: solid 1px black;
+}
+
+article {
+    gap: 15px;
+}
+
+#art1 {
+    grid-area: a1;
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+    background-size: cover;
+    background-image: url(../img/animals/feeding-time-for-the-panda-550x413.jpeg);
+}
+
+#art2 {
+    grid-area: a2;
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+    background-size: cover;
+    background-image: url(../img/food/frukt.jpeg)
+}
+
+#art3 {
+    grid-area: a3;
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+    background-size: cover;
+    background-image: url(../img/persons/avatar-6eff317c04c60419d06b2f4b0323eef0.jpg);
+}
+
+#cardWrapper {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+body{
+    
 }
