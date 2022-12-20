@@ -1,0 +1,26 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica;
+    background-color: rgb(81, 144, 109);
+  }
+  header {
+    background-color: rgb(193, 208, 22);
+    color: white;
+    margin: 0;
+    padding: 10px 10px 50px 10px;
+  }
+  
+  .tiles {
+    margin: -25px 10px 0 10px;
+    display:flex;
+    justify-content: space-between;
+  }
+  
+  .tile {
+    flex-basis: 25%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    min-height: 100px;
+  }

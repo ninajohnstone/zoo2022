@@ -1,11 +1,9 @@
 #wrapper {
     display: grid;
-    width: auto;
-    height: 200vh;
-    padding: 0;
+    width: 100vw;
     margin: auto;
-    background-color: rgb(123, 161, 111);
-    grid-gap: 50px;
+    margin-top: 55vh;
+    background-color: rgba(255, 255, 255, 0);
     grid-template-areas: 
     's1 s1 s1'
     's4 s4 s4'
@@ -14,54 +12,70 @@
     'ft ft ft';
 }
 
+
+
 #as {
     display: flex;
     flex-wrap: wrap;
 }
 #sec1 {
     grid-area: s1;
-    height: 300px;
-    width: 1424px;
-    background-size: cover;
-    background-image: url(../img/animals/of-webb-banner.jpg);
+    height: 1000px;
+    width: 1700px;
+    background-attachment: fixed;
+   
     position: sticky;
     top: 0px;
 }
 
 #sec2 {
     grid-area: s2;
-    width: 1423px;
-    height: 400px;
-    border: solid 1px black;
+    width: 95vw;
     border-radius: 25px;
-    text-align: center;
-    grid-area: s2;
-    display: grid;
-    justify-content: center;
+    display: flex;
+    margin-top: 20vh;
+    margin: 100px;
+    padding: 15px;
+
 }
 
 #sec3 {
     grid-area: s3;
     width: 1420px;
-    display: grid;
+    display: flex;
     justify-content: center;
-    gap: 50px;
-    font-size: 60px;
-    padding: 15px;
-    grid-template-areas: 
-    'a1 a2 a3';
+    text-align: center;
+    gap: 40px;
+    font-size: 60px; 
+}
+
+article:hover {
+    color: blue;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    margin: 10px;
+    color: white;
 }
 
 #sec4 {
     grid-area: s4;
-    width: 1424px;
+    width: 90vw;
     height: 300px;
     font-size: 70px;
+    display: flex;
     background-size: cover;
     font-style: arial;
-    background-image: url(../img/animals/djungel.jpg);
+    background-color: rgb(185, 204, 173);
     justify-content: center;
-    display: grid;
+    text-align: center;
+
+
     
 }
 
@@ -80,17 +94,15 @@ article {
     grid-area: a1;
     width: 360px;
     height: 250px;
-    border: solid 1px black;
     border-radius: 25px;
     background-size: cover;
-    background-image: url(../img/animals/meerkats-zoo-animals-zoological-garden-preview.jpeg);
+    background-image: url(../img/animals/meerkats-zoo-animals-zoological-garden-preview.jpg);
 }
 
 #art2 {
     grid-area: a2;
     width: 360px;
     height: 250px;
-    border: solid 1px black;
     border-radius: 25px;
     background-size: cover;
     background-image: url(../img/food/restaurang.jpg)
@@ -100,7 +112,6 @@ article {
     grid-area: a3;
     width: 360px;
     height: 250px;
-    border: solid 1px black;
     border-radius: 25px;
     background-size: cover;
     background-image: url(../img/persons/zoo-keeper.jpg);
@@ -115,20 +126,50 @@ article {
 
 body{
     padding: 0%;
+    margin: 0;
+    background-size: cover;
+    background-image: url(../img/animals/background_webb.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #art4 {
     grid-area: a4;
     width: 250px;
     height: 250px;
-    border: solid 1px black;
     background-image: url(../img/persons/karta.jpg);
     background-size: cover;
 }
 
 #art5 {
     grid-area: a5;
-    width: 250px;
+    width: 500px;
+    height: 250px;
+    padding: 5px;
+}
+
+#art6 {
+    grid-area: a6;
+    width: 360px;
     height: 250px;
     border: solid 1px black;
+}
+
+.tiles {
+    margin: -25px 10px p 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tile {
+    flex-basis: 25%;
+    background-color: azure;
+    border-radius: 5px;
+    padding: 10px;
+    min-height: 100px;
+}
+
+a {
+    color: rgb(25, 104, 78);
+    font-family: Arial, Helvetica, sans-serif;
 }
