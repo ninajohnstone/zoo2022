@@ -9,6 +9,7 @@
     's4 s4 s4'
     's3 s3 s3'
     's2 s2 s2'
+    's5 s5 s5'
     'ft ft ft';
 }
 
@@ -39,6 +40,18 @@
 
 }
 
+#sec5 {
+    grid-area: s5;
+    width: 95vw;
+    border-radius: 25px;
+    display: flex;
+    margin-top: 20vh;
+    margin: 100px;
+    padding: 15px;
+
+      
+}
+
 #sec3 {
     grid-area: s3;
     width: 1420px;
@@ -47,6 +60,7 @@
     text-align: center;
     gap: 40px;
     font-size: 60px; 
+    
 }
 
 article:hover {
@@ -56,6 +70,7 @@ article:hover {
 p {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
+    font-size: 50px;
 }
 
 h1 {
@@ -74,9 +89,6 @@ h1 {
     background-color: rgb(185, 204, 173);
     justify-content: center;
     text-align: center;
-
-
-    
 }
 
 footer {
@@ -94,7 +106,7 @@ article {
     grid-area: a1;
     width: 360px;
     height: 250px;
-    border-radius: 25px;
+    border-radius: 5px;
     background-size: cover;
     background-image: url(../img/animals/meerkats-zoo-animals-zoological-garden-preview.jpg);
 }
@@ -103,16 +115,16 @@ article {
     grid-area: a2;
     width: 360px;
     height: 250px;
-    border-radius: 25px;
+    border-radius: 5px;
     background-size: cover;
-    background-image: url(../img/food/restaurang.jpg)
+    background-image: url(../img/persons/hitta_till_nti_zoo.jpg)
 }
 
 #art3 {
     grid-area: a3;
     width: 360px;
     height: 250px;
-    border-radius: 25px;
+    border-radius: 5px;
     background-size: cover;
     background-image: url(../img/persons/zoo-keeper.jpg);
 }
@@ -128,7 +140,7 @@ body{
     padding: 0%;
     margin: 0;
     background-size: cover;
-    background-image: url(../img/animals/background_webb.jpg);
+    background-image: url(../img/animals/ZOO_background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -136,15 +148,15 @@ body{
 #art4 {
     grid-area: a4;
     width: 250px;
-    height: 250px;
-    background-image: url(../img/persons/karta.jpg);
+    height: 350px;
+    background-image: url(../img/persons/hitta_hit.jpg);
     background-size: cover;
 }
 
 #art5 {
     grid-area: a5;
     width: 500px;
-    height: 250px;
+    height: 150px;
     padding: 5px;
 }
 
@@ -153,6 +165,22 @@ body{
     width: 360px;
     height: 250px;
     border: solid 1px black;
+}
+
+#art7 {
+    grid-area: a7;
+    width: 250px;
+    height: 350px;
+    background-image: url(../img/persons/FAQ.jpg);
+    background-size: cover;
+}
+
+#art8 {
+    grid-area: a8;
+    width: 500px;
+    height: 250px;
+    padding: 5px;
+    text-align: left;
 }
 
 .tiles {
@@ -170,6 +198,7 @@ body{
 }
 
 a {
-    color: rgb(25, 104, 78);
-    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(124, 79, 178);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
+

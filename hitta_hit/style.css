@@ -1,0 +1,90 @@
+#wrapper {
+    display: grid;
+    width: 90vw;
+    margin: auto;
+    min-height: 100vh;
+    grid-template-areas: 
+    'hd hd hd'
+    'nd s1 s2'
+    'nd s1 s2'
+    'nd s3 s3'
+    'nd s3 s3'
+    's4 s4 s4';
+    grid-gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.8fr;
+}
+
+header {
+    grid-area: hd;
+    background-color: rgba(58, 121, 100, 0.564);
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+#sec4 {
+    grid-area: nd;
+    background-color: blue;
+    height: 500px;
+    background-image: url(../img/animals/zoo_map.jpg);
+    background-size: cover;
+}
+
+#sec1 {
+    display: flex;
+    justify-content: center;
+    grid-area: s1;
+    background-color: rgba(255, 255, 255, 0.563);
+}
+
+#sec2 {
+    grid-area: s2;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.563);
+}
+
+#sec3 {
+    display: grid;
+    grid-template-areas:
+    'a1 a2'
+    'a3 a4';
+    grid-area: s3;
+    background-color: rgba(255, 255, 255, 0.563);
+}
+
+footer {
+    grid-area: ft;
+    background-color: green;
+}
+
+body {
+    background-image: url(../img/persons/hitta_hit_background.jpg);
+    background-size: cover;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(34, 71, 54);
+    font-size: 20px;
+}
+
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+#art1 {
+    background-image: url(../img/persons/youtube.jpg);
+    background-size: cover;
+    padding: 10px;
+}
+
+#art2 {
+    background-image: url(../img/persons/instagram.jpg);
+    background-size: cover;
+    padding: 10px;
+    height: 225px;
+}
+
